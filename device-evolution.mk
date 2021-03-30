@@ -13,3 +13,5 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/redfin/overlay-evolution
 PRODUCT_PACKAGES += \
     HbmSVManagerOverlay
 
+# PowerShare
+include hardware/google/pixel/powershare/device.mk
