@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, device/google/redbull/device-custom.mk)
+$(call inherit-product, device/google/redbull/device-evolution.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/redfin/overlay-custom
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/redfin/overlay-evolution
 
 # HBM
 PRODUCT_PACKAGES += \

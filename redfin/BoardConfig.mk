@@ -30,4 +30,4 @@ else
   -include vendor/google_devices/redfin/proprietary/BoardConfigVendor.mk
 endif
 
-include device/google/redfin/BoardConfigCustom.mk
+include device/google/redfin/BoardConfigEvolution.mk

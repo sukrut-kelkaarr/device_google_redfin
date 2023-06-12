@@ -26,6 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
 
 # Disable mainline checking
 #PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := strict
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
 #
 # All components inherited here go to system_ext image
@@ -67,24 +68,7 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 PRODUCT_MANUFACTURER := Google
-PRODUCT_BRAND := google
+PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_redfin
 PRODUCT_DEVICE := redfin
-PRODUCT_MODEL := Pixel 5
-
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-include device/google/redfin/device-custom.mk
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=redfin \
-    PRIVATE_BUILD_DESC="redfin-user 13 TQ2A.230505.002 9891397 release-keys"
-
-BUILD_FINGERPRINT := google/redfin/redfin:13/TQ2A.230505.002/9891397:user/release-keys
-
-$(call inherit-product, vendor/google/redfin/redfin-vendor.mk)
+PRODUCT_MODEL := AOSP on redfin
