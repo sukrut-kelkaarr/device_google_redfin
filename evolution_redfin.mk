@@ -6,10 +6,11 @@
 #
 
 # Inherit some common Evolution stuff.
-TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+TARGET_DISABLE_EPPE := true
 EVO_BUILD_TYPE := OFFICIAL
 TARGET_IS_PIXEL := true
+TARGET_PIXEL_STAND_SUPPORTED := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/redfin/aosp_redfin.mk)
