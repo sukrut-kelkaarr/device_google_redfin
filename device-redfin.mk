@@ -18,6 +18,8 @@ PRODUCT_HARDWARE := redfin
 
 include device/google/redbull/device-common.mk
 
+include device/google/redfin/wireless_charger/wireless_charger.mk
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
 # LOCAL_PATH is device/google/redbull before this
