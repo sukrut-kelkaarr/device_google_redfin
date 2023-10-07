@@ -347,6 +347,8 @@ VENDOR_SKIP_FILES=(
     "etc/media_codecs_performance_c2.xml"
     "etc/media_profiles_V1_0.xml"
     "etc/mixer_paths_noextcodec_snd.xml"
+    "etc/input_classifier_model.pb"
+    "etc/linker.config.pb"
     "etc/mkshrc"
     "etc/passwd"
     "etc/permissions/android.hardware.audio.low_latency.xml"
